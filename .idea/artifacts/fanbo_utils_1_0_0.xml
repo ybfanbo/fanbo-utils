@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="fanbo-utils-1.0.0">
+    <output-path>$PROJECT_DIR$/out/artifacts/fanbo_utils_1_0_0</output-path>
+    <root id="archive" name="fanbo-utils-1.0.0.jar">
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/Base64Util.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/ArabicToChineseUtil.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/PhoneUtil.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/MacAddressUtil.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/DateUtil.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/BirthdayUtil.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/idworker/IdWorker.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/FileUtil.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/MD5Util.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/EncryptUtil.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/JSONUtil.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/MoneyUtil.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/enums/DateOffsetType.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/StringUtil.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/RegexUtil.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/IPUtil.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/idworker/IdGenerator.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/IdWorkerUtil.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/IdCardUtil.class" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/fanbo/com/fanbo/utils/ImageUtil.class" />
+    </root>
+  </artifact>
+</component>
