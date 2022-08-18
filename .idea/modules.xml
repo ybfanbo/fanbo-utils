@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/fanbo.iml" filepath="$PROJECT_DIR$/fanbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fanbo-utils.iml" filepath="$PROJECT_DIR$/fanbo-utils.iml" />
     </modules>
   </component>
 </project>

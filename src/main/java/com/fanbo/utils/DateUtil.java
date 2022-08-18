@@ -292,7 +292,7 @@ public class DateUtil {
      */
     public static Calendar getCalendar(long millis) {
         Calendar cal = Calendar.getInstance();
-        cal.setTime(new java.util.Date(millis));
+        cal.setTime(new Date(millis));
         return cal;
     }
 
@@ -306,8 +306,8 @@ public class DateUtil {
      *
      * @return 系统当前时间
      */
-    public static java.util.Date getDate() {
-        return new java.util.Date();
+    public static Date getDate() {
+        return new Date();
     }
 
     /**
@@ -316,8 +316,8 @@ public class DateUtil {
      * @param millis 毫秒数
      * @return 指定毫秒数表示的日期
      */
-    public static java.util.Date getDate(long millis) {
-        return new java.util.Date(millis);
+    public static Date getDate(long millis) {
+        return new Date(millis);
     }
 
     /**
@@ -327,7 +327,7 @@ public class DateUtil {
      * @return 字符串
      */
     public static String getDate(String format) {
-        java.util.Date date = new java.util.Date();
+        Date date = new Date();
         if (null == date) {
             return null;
         }
@@ -429,7 +429,7 @@ public class DateUtil {
      * @param sdf
      * @return
      */
-    public static java.util.Date str2Date(String str, SimpleDateFormat sdf) {
+    public static Date str2Date(String str, SimpleDateFormat sdf) {
         return str2Date(str, sdf, true);
     }
 
@@ -441,12 +441,12 @@ public class DateUtil {
      * @param error2null
      * @return
      */
-    public static java.util.Date str2Date(String str, SimpleDateFormat sdf, boolean error2null) {
+    public static Date str2Date(String str, SimpleDateFormat sdf, boolean error2null) {
         if (sdf == null || "".equals(str) || " ".equals(str)) {
             return null;
         }
 
-        java.util.Date date = null;
+        Date date = null;
         try {
             date = sdf.parse(str);
         } catch (ParseException e) {
@@ -466,14 +466,14 @@ public class DateUtil {
      * @return 字符串
      */
     public static String date2Str(SimpleDateFormat date_sdf) {
-        java.util.Date date = getDate();
+        Date date = getDate();
         if (null == date) {
             return null;
         }
         return date_sdf.format(date);
     }
 
-    public static String date2Str(java.util.Date date, String pattern) {
+    public static String date2Str(Date date, String pattern) {
         return date2Str(date, getSDFormat(pattern));
     }
 
@@ -484,7 +484,7 @@ public class DateUtil {
      * @param date_sdf 日期格式
      * @return 字符串
      */
-    public static String date2Str(java.util.Date date, SimpleDateFormat date_sdf) {
+    public static String date2Str(Date date, SimpleDateFormat date_sdf) {
         if (null == date || date_sdf == null) {
             return null;
         }
@@ -526,7 +526,7 @@ public class DateUtil {
      * @param date 指定日期
      * @return 指定日期的时间戳
      */
-    public static Timestamp getTimestamp(java.util.Date date) {
+    public static Timestamp getTimestamp(Date date) {
         return new Timestamp(date.getTime());
     }
 
@@ -639,7 +639,7 @@ public class DateUtil {
      * @param date 指定的日期
      * @return 指定日期按“年-月-日“格式显示
      */
-    public static String formatDate(java.util.Date date) {
+    public static String formatDate(Date date) {
         return date_sdf.get().format(date);
     }
 
@@ -650,7 +650,7 @@ public class DateUtil {
      * @return 指定毫秒数表示日期按“年-月-日“格式显示
      */
     public static String formatDate(long millis) {
-        return date_sdf.get().format(new java.util.Date(millis));
+        return date_sdf.get().format(new Date(millis));
     }
 
     /**
@@ -681,7 +681,7 @@ public class DateUtil {
      * @param pattern 指定的格式
      * @return 指定日期按指定格式显示
      */
-    public static String formatDate(java.util.Date date, String pattern) {
+    public static String formatDate(Date date, String pattern) {
         return getSDFormat(pattern).format(date);
     }
 
@@ -706,7 +706,7 @@ public class DateUtil {
      * @return 指定毫秒数表示日期按“年-月-日 时：分“格式显示
      */
     public static String formatTime(long millis) {
-        return time_sdf.get().format(new java.util.Date(millis));
+        return time_sdf.get().format(new Date(millis));
     }
 
     /**
@@ -725,7 +725,7 @@ public class DateUtil {
      * @param date 指定的日期
      * @return 指定日期按“年-月-日 时：分“格式显示
      */
-    public static String formatTime(java.util.Date date) {
+    public static String formatTime(Date date) {
         return time_sdf.get().format(date);
     }
 
@@ -750,7 +750,7 @@ public class DateUtil {
      * @return 指定毫秒数表示日期按“时：分“格式显示
      */
     public static String formatShortTime(long millis) {
-        return short_time_sdf.get().format(new java.util.Date(millis));
+        return short_time_sdf.get().format(new Date(millis));
     }
 
     /**
@@ -769,7 +769,7 @@ public class DateUtil {
      * @param date 指定的日期
      * @return 指定日期按“时：分“格式显示
      */
-    public static String formatShortTime(java.util.Date date) {
+    public static String formatShortTime(Date date) {
         return short_time_sdf.get().format(date);
     }
 
@@ -788,7 +788,7 @@ public class DateUtil {
      * @return 如果转换成功则返回转换后的日期
      * @throws ParseException
      */
-    public static java.util.Date parseDate(String src, String pattern) throws ParseException {
+    public static Date parseDate(String src, String pattern) throws ParseException {
         return getSDFormat(pattern).parse(src);
     }
 
@@ -802,7 +802,7 @@ public class DateUtil {
      */
     public static Calendar parseCalendar(String src, String pattern) throws ParseException {
 
-        java.util.Date date = parseDate(src, pattern);
+        Date date = parseDate(src, pattern);
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
         return cal;
@@ -824,7 +824,7 @@ public class DateUtil {
      * @throws ParseException
      */
     public static Timestamp parseTimestamp(String src, String pattern) throws ParseException {
-        java.util.Date date = parseDate(src, pattern);
+        Date date = parseDate(src, pattern);
         return new Timestamp(date.getTime());
     }
 
